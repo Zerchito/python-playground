@@ -3,12 +3,10 @@ from card import suits, ranks, Card
 
 class Deck:
 
-  def __int__(self):
-
+  def __init__(self):
     self.all_cards = []
-
     for suit in suits:
-      for rank in ranks: 
+      for rank in ranks:
         #create the card
         created_card = Card(suit, rank)
         self.all_cards.append(created_card)
